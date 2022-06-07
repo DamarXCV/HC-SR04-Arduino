@@ -18,15 +18,16 @@ private:
     uint16_t maxDistance;
     uint16_t timeout;
 
-    void detachInterrupt();
-    void attachInterrupt();
+    void startInterrupt();
+    void endInterrupt();
 
-    static void interruptStartMessurement();
-    static void interruptEndMessurement();
+    static void interruptMessure();
+
+    static boolean pinState;
 
     static boolean interruptsAttached;
-    static uint16_t interruptStart;
-    static uint16_t interruptDuration;
+    static uint32_t interruptStart;
+    static uint32_t interruptDuration;
     static boolean interruptNewMessurement;
 
 public:
