@@ -5,8 +5,6 @@
 #define INITIATE_MESSUREMENT_PULS_DURATION 10
 #define TIMEOUT_THRESHOLD 1.33f
 
-namespace HC_SR04 {
-
 class HC_SR04 {
 private:
     uint8_t triggerPin;
@@ -41,5 +39,3 @@ public:
     float getInterruptMessurement();
     boolean hasNewInterruptMessurement();
 };
-
-} // namespace HC_SR04

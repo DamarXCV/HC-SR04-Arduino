@@ -1,7 +1,5 @@
 #include "HC_SR04.h"
 
-namespace HC_SR04 {
-
 boolean HC_SR04::pinState;
 
 boolean HC_SR04::interruptsAttached;
@@ -113,5 +111,3 @@ float HC_SR04::measure(float _temperature)
 
     return pulseIn(echoPin, HIGH, timeout) / 2.0f * speedOfSound;
 }
-
-} // namespace HC_SR04
